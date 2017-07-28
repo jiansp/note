@@ -9,7 +9,7 @@ public class DateTime {
 	@Test
 	public void main(){
 		/*
-		 * 1.格式化时间成String类型
+		 * 1.鏍煎紡鍖栨椂闂存垚String绫诲瀷锛屽埆tm鍐嶇櫨搴︿簡
 		 */ 
 		SimpleDateFormat formatDate = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
 		String date = formatDate.format(new Date());
