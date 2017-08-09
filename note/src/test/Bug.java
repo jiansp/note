@@ -1,6 +1,8 @@
 package test;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 import org.junit.Test;
@@ -24,5 +26,8 @@ public class Bug {
 			}
 		}
 		System.out.println(copyList);
+		
+		SimpleDateFormat dateTime = new SimpleDateFormat("MM月dd日 HH点mm分");
+		System.out.println(dateTime.format(new Date()));
 	}
 }
