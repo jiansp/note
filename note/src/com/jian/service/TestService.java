@@ -3,10 +3,8 @@ package com.jian.service;
 import org.hibernate.Session;
 import org.hibernate.Transaction;
 
-import test.TransactionTest;
-
+import com.jian.dao.BaseDao;
 import com.jian.dao.HibernateUtil;
-import com.jian.dao.TestDao;
 import com.jian.moble.ParamConfig;
 
 public class TestService {
@@ -15,10 +13,10 @@ public class TestService {
 		
 		Session session = HibernateUtil.getSession();
 		Transaction tx = session.beginTransaction();
-		TestDao testDao = new TestDao();
-		testDao.save(paramConfig);
-		ParamConfig pc =(ParamConfig) testDao.findById(ParamConfig.class, "1");
-		testDao.delete(pc);
+		BaseDao baseDao = new BaseDao();
+		baseDao.save(paramConfig);
+		ParamConfig pc =(ParamConfig) baseDao.findById(ParamConfig.class, "1");
+		baseDao.delete(pc);
 		tx.commit();
 	}
 }

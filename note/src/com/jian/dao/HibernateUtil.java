@@ -6,7 +6,7 @@ import org.hibernate.cfg.AnnotationConfiguration;
 import org.hibernate.cfg.Configuration;
 /*
  * 一、hiberbate工具类，用于获得session或sessionFactory。
- * 二、获取session有两个方法，openSession()和getgetCurrentSession()。
+ * 二、获取session有两个方法，openSession()和getCurrentSession()。
  * 	1、
  * 	2、采用getCurrentSession()需要在Hibernate.cfg.xml配置文件中加入如下配置：
  * 		如果是本地事物，及JDBC一个数据库：
