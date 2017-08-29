@@ -8,9 +8,12 @@ import com.jian.service.TestService;
  */
 public class TransactionTest {
 	public static void main(String[] args) {
-		ParamConfig paramConfig = new ParamConfig();
+		/*ParamConfig paramConfig = new ParamConfig();
 		paramConfig.setId("22223");
 		TestService testService = new TestService();
-		testService.rollback(paramConfig);
+		testService.rollback(paramConfig);*/
+		String msg = "123,";
+		System.out.println(msg.substring(0, 3));
+		
 	}
 }
